@@ -1,0 +1,9 @@
+<form action="/risp" method = "POST">
+    {% for i in reg%}
+    <div>
+        <input type="checkbox" id="check" name="check" value="{{i}}">
+        <label for="{{i}}">{{i}}</label>
+    </div>
+    {%endfor%}
+    <p><input type = "submit" value = "Submit" /></p>
+</form>
